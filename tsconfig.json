@@ -1,6 +1,7 @@
 {
     "files": [],
     "references": [
-        { "path": "packages/scraper" }
+        { "path": "packages/core" },
+        { "path": "packages/api" }
     ]
 }

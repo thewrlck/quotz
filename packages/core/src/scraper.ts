@@ -4,7 +4,7 @@ export const scraper = async () => {
     const data: { text: string; author: string }[] = [];
 
     const browser = await puppeteer.launch({
-        headless: false,
+        // headless: false,
         defaultViewport: null,
     });
 
@@ -46,5 +46,3 @@ export const scraper = async () => {
 
     return data;
 };
-
-scraper().then(console.log).catch(console.error);
