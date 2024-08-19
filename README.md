@@ -4,6 +4,7 @@ A Node.js application demonstrating the use of Puppeteer and [Orama SDK](https:/
 
 ## Features
 **Quote Scraping**: Use Puppeteer to gather 100 famous quotes from a specified website, iterating through multiple pages.
+
 **Data Enrichment**: Utilizes Orama SDK to save metadata and scraped quotes.
 
 ## API
@@ -12,7 +13,9 @@ A Node.js application demonstrating the use of Puppeteer and [Orama SDK](https:/
 
 ## Getting Started
 Install dependencies: `npm install`
+
 Build packages: `npm run build`
+
 Run the API: `npm run api`
 
 Run with Chrome browser: `http://localhost:3000/quotes`
