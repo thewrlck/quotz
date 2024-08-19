@@ -2,7 +2,15 @@
   "name": "quotz",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "scraper": "npm start -w @quotz/scraper"
+  },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
 }
