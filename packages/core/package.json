@@ -16,6 +16,7 @@
     "tsup": "*"
   },
   "dependencies": {
+    "@orama/orama": "^2.0.23",
     "puppeteer": "^23.1.0"
   }
 }

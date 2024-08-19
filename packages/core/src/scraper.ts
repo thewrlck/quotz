@@ -1,7 +1,8 @@
 import puppeteer from "puppeteer";
+import { Quote } from "./save-quotes";
 
 export const scraper = async () => {
-    const data: { text: string; author: string }[] = [];
+    const data: Quote[] = [];
 
     const browser = await puppeteer.launch({
         // headless: false,
@@ -18,7 +19,7 @@ export const scraper = async () => {
         });
 
         const nextData = await page.evaluate(() => {
-            const _nextData: { text: string; author: string }[] = [];
+            const _nextData: Quote[] = [];
     
             const quotes = document.querySelectorAll(".quote");
     
